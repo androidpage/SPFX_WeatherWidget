@@ -3,7 +3,7 @@
   "solution": {
     "name": "weather-client-side-solution",
     "id": "2fea9385-8225-40fc-8abb-7c2e687f3db5",
-    "version": "1.0.0.0",
+    "version": "2.1.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true
   },

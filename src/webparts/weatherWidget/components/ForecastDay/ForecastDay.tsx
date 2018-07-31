@@ -4,6 +4,7 @@ import { Icon } from 'office-ui-fabric-react/lib/Icon';
 
 export interface IForecastDayProps{
     day: any;
+    key: number;
 }
 export interface IForecastDayState{
 }
@@ -15,13 +16,13 @@ export default class ForecastDay extends React.Component<IForecastDayProps, IFor
 
     public render(): React.ReactElement<IForecastDayProps>{
         return(
-            <div className={ styles.dayContainer }>
+            <div className={ styles.dayContainer } style={{ gridColumn: this.props.key }}>
                 <h5 className={ styles.forecastDay }>{ this.props.day.day }</h5>
                 <Icon iconName={ this._getWeatherIcon(this.props.day.code) } className={ styles.weatherIcon }/>
                 <Icon iconName="CaretSolidUp" className={ styles.forecastHighIcon } />
-                <span className={ styles.forecastTempText }>{ this.props.day.high }&deg;</span>
+                <span className={ [styles.forecastTempText, styles.forecastTempTextHigh].join(" ") }>{ this.props.day.high }&deg;</span>
                 <Icon iconName="CaretSolidDown" className={ styles.forecastLowIcon } />
-                <span className={ styles.forecastTempText }>{ this.props.day.low }&deg;</span>
+                <span className={ [styles.forecastTempText, styles.forecastTempTextLow].join(" ") }>{ this.props.day.low }&deg;</span>
 
                 <span className={ styles.forecastText }>{ this.props.day.text }</span>
                 <h5 className={ styles.forecastDate }>{ this.props.day.date }</h5>
