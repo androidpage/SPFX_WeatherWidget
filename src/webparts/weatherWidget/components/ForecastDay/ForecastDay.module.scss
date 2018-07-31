@@ -1,0 +1,58 @@
+.dayContainer{
+    display: grid;
+    grid-template-columns:3fr 1fr 1fr;
+    background-color: #EEE;
+    box-shadow: #AAA 1px 1px 1px;
+    margin: 4px;
+    padding: 0px;
+    
+    .forecastDay{
+        font-size: 8pt;
+        grid-column: span 3;
+        padding: 5px;
+        margin: 0;
+        margin-bottom: 5px;
+        background-color: rgb(149, 211, 247);
+    }
+
+    .weatherIcon{
+        align-self: center;
+        font-size: 32px;
+        text-align: center;
+        grid-row: span 2;
+        color: rgb(30, 144, 211);
+    }
+
+    .forecastTempText{
+        text-align: center;
+        align-self: center;
+        padding: 0 4px 0 0;
+    }
+
+    .forecastHighIcon{
+        color: rgb(255, 152, 83);
+        align-self: center;
+        font-size: 8pt;
+    }
+
+    .forecastLowIcon{
+        color: rgb(84, 146, 238);
+        align-self: center;
+        font-size: 8pt;
+    }
+
+    .forecastDate{
+        font-size: 10pt;
+        margin: 0;
+        grid-column: span 3;
+        margin: 0 5px 5px 5px;
+        color: #444;
+    }
+
+    .forecastText{
+        font-size: 9pt;
+        grid-column: span 3;
+        margin: 5px;
+        color: #444;
+    }
+}

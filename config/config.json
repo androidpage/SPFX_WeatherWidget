@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "weather-widget-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/weatherWidget/WeatherWidgetWebPart.js",
+          "manifest": "./src/webparts/weatherWidget/WeatherWidgetWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "WeatherWidgetWebPartStrings": "lib/webparts/weatherWidget/loc/{locale}.js"
+  }
+}

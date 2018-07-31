@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "weather",
+    "libraryId": "2fea9385-8225-40fc-8abb-7c2e687f3db5",
+    "environment": "spo"
+  }
+}
