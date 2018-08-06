@@ -1,26 +1,25 @@
-## weather
+# SPFX Weather Widget
 
-This is where you include your WebPart documentation.
+This is a simple weather forecast widget written using the SPFX framework and yahoo weather API.
 
-### Building the code
+![Screenshot of widget](./assets/Preview1.png)
+>Screenshot of widget with default colours
 
-```bash
-git clone the repo
-npm i
-npm i -g gulp
-gulp
+## Installation
+
+You can install the web part using the pre-packaged solution (which I will endeavour to keep up to date) found here: 'sharepoint/solution/weather.sppkg'
+
+Alternatively you can build your own copy by cloning this repository and running the following commands:
+
+``` bash
+gulp bundle --ship
+gulp package-solution --ship
 ```
 
-This package produces the following:
+Then upload the new sppkg file from the sharepoint folder.
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+## Configuration
 
-### Build options
+The config pane gives you the option to customise the city for which to show the forecast.
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+The widget will respect the current theme colours being used on your SharePoint site.
